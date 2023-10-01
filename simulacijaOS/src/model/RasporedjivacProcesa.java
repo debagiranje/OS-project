@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // TODO -- svasta. Al boze moj, imamo nekakav okvir :D anja spasi me
+// https://inst.eecs.berkeley.edu/~cs162/su20/static/lectures/11.pdf -- prica o fcfs, convoy effect... fifo q bez preempting
+// da li se za nas pod "bez prekida" odnosi na to sto nemamo preempting? ...
 
 public class RasporedjivacProcesa {
 	
@@ -61,10 +63,10 @@ public class RasporedjivacProcesa {
             }
 
             if (trenutniProces.isBlocked()) {
-                System.out.println("Process " + trenutniProces.getPID() + " - blokiran.");
+                System.out.println("Proces " + trenutniProces.getPID() + " - blokiran.");
                 trenutniProces = null;
             } else {
-                System.out.println("Process " + trenutniProces.getPID() + " - zavrsen.");
+                System.out.println("Proces " + trenutniProces.getPID() + " - zavrsen.");
                 trenutniProces = null;
             }
         }
