@@ -49,7 +49,6 @@ public class DiskScheduler {
         int left = 0;
         int right = 0;
 
-        // Find left and right distances
         for (int x = 0; x < headRequests.size(); x++) {
             if (headRequests.get(x) == currentHead) {
                 if (x != 0)
@@ -62,7 +61,7 @@ public class DiskScheduler {
             }
         }
 
-        // Determine direction and update sequence
+     
         if (left < right) {
             arrangeSequence();
             headRequests.add(headRequests.remove(0));

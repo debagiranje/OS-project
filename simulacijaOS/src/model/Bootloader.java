@@ -15,19 +15,19 @@ public class Bootloader {
     public void initializeHardware() {
         System.out.println("Inicijalizacija hardvera...");
         // TODO -- shibni init hardvera - napraviti modele procesora, memorije, uredjaja i sl!!!
-        System.out.println("Hardver inicijalizovan");
+        System.out.println("Hardver inicijalizovan\n");
     }
     
     public void initializeOS() {
         System.out.println("Inicijalizacija OS-a...");
         // TODO -- init dzidzabidza - mem manager, process scheduler, drajveri(?), perif uredjaji(?)...
-        System.out.println("OS inizijalizovan");
+        System.out.println("OS inizijalizovan\n");
     }
     
     public void startOS() {
         System.out.println("Pokrecem...");
         // TODO -- exec OS (Napraviti klasu?)
-        System.out.println("OS pokrenut");
+        System.out.println("OS pokrenut\n\n");
     }
 
 }
